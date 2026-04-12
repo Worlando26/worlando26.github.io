@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worlando Has — Full Stack Developer & Designer</title>
+  <meta name="description" content="Portfolio de Worlando Has — Développeur Full Stack & Designer UI/UX basé à Madagascar. Logiciels, applications web et mobile." />
+
+  <!-- Fonts via Fontshare -->
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Ambient blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- ══════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════ -->
+  <nav>
+    <a class="nav-logo" href="#hero">Worlando<em>.</em></a>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#works">Projets</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-cta">Me contacter</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero"       onclick="closeMenu()">Accueil</a>
+    <a href="#about"      onclick="closeMenu()">À propos</a>
+    <a href="#works"      onclick="closeMenu()">Projets</a>
+    <a href="#experience" onclick="closeMenu()">Expérience</a>
+    <a href="#contact"    onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        Disponible pour de nouveaux projets
+      </div>
+
+      <h1 class="hero-name">
+        Worlando<br/>
+        <span class="accent">Has</span>
+      </h1>
+
+      <p class="hero-role">
+        <span>Full Stack Developer</span> &amp; UI/UX Designer
+      </p>
+
+      <p class="hero-bio">
+        22 ans, basé à Madagascar. Je conçois et développe des logiciels métier, sites web et applications mobiles — du design à la mise en production.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#works"   class="btn btn-solid">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">6<sup>+</sup></div>
+          <div class="stat-label">Projets livrés</div>
+        </div>
+        <div>
+          <div class="stat-num">3<sup>+</sup></div>
+          <div class="stat-label">Années d'expérience</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label">Apps en lancement</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo -->
+    <div class="hero-photo-col">
+      <div class="photo-wrap">
+        <div class="photo-frame">
+          <img src="images/profil.png" alt="Worlando Has" />
+        </div>
+        <div class="photo-tag">
+          <div class="photo-tag-icon">📍</div>
+          <div class="photo-tag-text">
+            <strong>Madagascar</strong>
+            <span>Antananarivo</span>
+          </div>
+        </div>
+        <div class="photo-deco"></div>
+        <div class="photo-deco2"></div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="bar"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Info cards -->
+        <div class="about-left">
+          <div class="about-card reveal">
+            <div class="about-card-label">Identité</div>
+            <div class="about-card-val">Worlando Has</div>
+            <div class="about-card-sub">22 ans · Développeur & Designer</div>
+          </div>
+
+          <div class="about-card reveal">
+            <div class="about-card-label">Formation</div>
+            <div class="about-card-val">IT University</div>
+            <div class="about-card-sub">Informatique · 2021 — 2024</div>
+          </div>
+
+          <div class="about-card reveal">
+            <div class="about-card-label">Localisation</div>
+            <div class="about-card-val">Madagascar 🇲🇬</div>
+            <div class="about-card-sub">Disponible en remote &amp; local</div>
+          </div>
+
+          <div class="about-card reveal">
+            <div class="about-card-label">Actuellement</div>
+            <div class="about-card-val">Gérant Hôtel &amp; Dev</div>
+            <div class="about-card-sub">Vahinn Resort · depuis 2026</div>
+          </div>
+        </div>
+
+        <!-- Right: Text + skills + services -->
+        <div class="about-right">
+          <span class="label reveal">À propos</span>
+          <h2 class="section-title reveal">Construire des produits<br/>qui ont du sens</h2>
+
+          <p class="reveal">
+            Je m'appelle <strong>Worlando Has</strong>, développeur Full Stack et designer UI/UX de 22 ans. Diplômé de l'<strong>IT University</strong> (2021–2024), j'ai acquis une double compétence technique et créative qui me permet de couvrir un projet de bout en bout.
+          </p>
+          <p class="reveal">
+            En parallèle de mon travail en <strong>freelance sur Fiverr</strong> (design, 2025), je gère depuis début 2026 le <strong>Vahinn Resort</strong> — une expérience qui a renforcé ma compréhension des enjeux opérationnels que je traduis en logiciels métier adaptés.
+          </p>
+          <p class="reveal">
+            J'ai développé des <strong>solutions hôtelières complètes</strong> (facturation, réservations, point de vente), un site pour le Vahinn Resort, et deux plateformes innovantes pour le marché malgache : <strong>MotiraStore</strong> et <strong>Motira</strong>.
+          </p>
+
+          <!-- Skills -->
+          <div class="skills-section reveal">
+            <div class="skills-title">Stack technique</div>
+            <div class="skill-cats">
+              <div class="skill-cat-row">
+                <span class="skill-cat-name">Frontend</span>
+                <div class="skill-tags">
+                  <span class="stag">HTML / CSS</span>
+                  <span class="stag">JavaScript</span>
+                  <span class="stag">React</span>
+                  <span class="stag">Figma</span>
+                </div>
+              </div>
+              <div class="skill-cat-row">
+                <span class="skill-cat-name">Backend</span>
+                <div class="skill-tags">
+                  <span class="stag">PHP / Laravel</span>
+                  <span class="stag">Node.js</span>
+                  <span class="stag">MySQL</span>
+                  <span class="stag">REST API</span>
+                </div>
+              </div>
+              <div class="skill-cat-row">
+                <span class="skill-cat-name">Outils</span>
+                <div class="skill-tags">
+                  <span class="stag">Git / GitHub</span>
+                  <span class="stag">XAMPP</span>
+                  <span class="stag">VS Code</span>
+                  <span class="stag">Postman</span>
+                </div>
+              </div>
+              <div class="skill-cat-row">
+                <span class="skill-cat-name">Design</span>
+                <div class="skill-tags">
+                  <span class="stag">UI Design</span>
+                  <span class="stag">Prototypage</span>
+                  <span class="stag">Responsive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="services-grid">
+            <div class="srv reveal">
+              <div class="srv-icon">💻</div>
+              <div class="srv-name">Développement Web</div>
+              <div class="srv-desc">Sites vitrines, web apps, logiciels métier sur mesure</div>
+            </div>
+            <div class="srv reveal reveal-delay-1">
+              <div class="srv-icon">🎨</div>
+              <div class="srv-name">UI / UX Design</div>
+              <div class="srv-desc">Interfaces modernes, maquettes Figma, design system</div>
+            </div>
+            <div class="srv reveal reveal-delay-2">
+              <div class="srv-icon">📱</div>
+              <div class="srv-name">Applications Mobile</div>
+              <div class="srv-desc">Expériences responsives et performantes multi-device</div>
+            </div>
+            <div class="srv reveal reveal-delay-3">
+              <div class="srv-icon">🗄️</div>
+              <div class="srv-name">Logiciels Métier</div>
+              <div class="srv-desc">Gestion, facturation, stock, réservations, POS</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       WORKS
+  ═══════════════════════════════════════════════ -->
+  <section id="works">
+    <div class="container">
+      <div class="works-header">
+        <div>
+          <span class="label reveal">Portfolio</span>
+          <h2 class="section-title reveal">Mes réalisations</h2>
+          <p class="reveal">Logiciels, sites web et applications conçus de A à Z.</p>
+        </div>
+        <div class="filter-wrap reveal">
+          <button class="ftab active" data-filter="all">Tous</button>
+          <button class="ftab" data-filter="logiciel">Logiciels</button>
+          <button class="ftab" data-filter="web">Sites Web</button>
+          <button class="ftab" data-filter="app">Applications</button>
+          <button class="ftab" data-filter="design">🎨 Design</button>
+        </div>
+      </div>
+
+      <div class="works-grid">
+
+        <!-- 1 — Site Web Vahinn Resort (featured) -->
+        <div class="wcard featured reveal" data-cat="web">
+          <div class="wcard-thumb">
+            <img src="images/siteweb.png" alt="Site Web Vahinn Resort" loading="lazy" />
+            <div class="wcard-thumb-overlay"></div>
+            <span class="wbadge badge-web">Site Web</span>
+          </div>
+          <div class="wcard-body">
+            <div class="wcard-cat">Web · Hôtellerie</div>
+            <h3 class="wcard-title">Vahinn Resort — Site Officiel</h3>
+            <p class="wcard-desc">
+              Site vitrine et de réservation pour le Vahinn Resort (Hôtel · Resort · Spa). Interface moderne avec galerie immersive, présentation des chambres et services, formulaire de réservation et navigation multilingue.
+            </p>
+            <div class="wcard-tags">
+              <span class="wtag">HTML / CSS</span>
+              <span class="wtag">JavaScript</span>
+              <span class="wtag">Responsive</span>
+              <span class="wtag">Slider</span>
+              <span class="wtag">vahinnresort.com</span>
+            </div>
+            <br/>
+            <a href="https://www.vahinnresort.com/" target="_blank" rel="noopener" class="btn btn-solid" style="width:fit-content;margin-top:0.5rem;">
+              Voir le site →
+            </a>
+          </div>
+          <div class="wcard-arrow">→</div>
+        </div>
+
+        <!-- 2 — Gestion Facturation Hôtel -->
+        <div class="wcard reveal" data-cat="logiciel">
+          <div class="wcard-thumb">
+            <img src="images/gestionfacturationhotel.png" alt="Gestion Facturation Hôtel" loading="lazy" />
+            <div class="wcard-thumb-overlay"></div>
+            <span class="wbadge badge-logiciel">Logiciel</span>
+          </div>
+          <div class="wcard-body">
+            <div class="wcard-cat">Logiciel · Hôtellerie</div>
+            <h3 class="wcard-title">Point de Vente Hôtel</h3>
+            <p class="wcard-desc">
+              Système de caisse et facturation pour restaurant d'hôtel : gestion des tables par zone (restaurant, terrasse, jardin, piscine, plage, chambres), commandes, menu catégorisé et historique.
+            </p>
+            <div class="wcard-tags">
+              <span class="wtag">PHP / MySQL</span>
+              <span class="wtag">Caisse POS</span>
+              <span class="wtag">Multi-zones</span>
+            </div>
+          </div>
+          <div class="wcard-arrow">→</div>
+        </div>
+
+        <!-- 3 — Gestion Réservation Hôtel -->
+        <div class="wcard reveal" data-cat="logiciel">
+          <div class="wcard-thumb">
+            <img src="images/gestiondereservation.png" alt="Gestion Réservation Hôtel" loading="lazy" />
+            <div class="wcard-thumb-overlay"></div>
+            <span class="wbadge badge-logiciel">Logiciel</span>
+          </div>
+          <div class="wcard-body">
+            <div class="wcard-cat">Logiciel · Hôtellerie</div>
+            <h3 class="wcard-title">Vahinn Resort — Hotel Management</h3>
+            <p class="wcard-desc">
+              Logiciel de gestion hôtelière complet : tableau de bord en temps réel, réservations, suivi des chambres, clients, notifications et vision plan. Interface épurée et intuitive.
+            </p>
+            <div class="wcard-tags">
+              <span class="wtag">PHP / Laravel</span>
+              <span class="wtag">MySQL</span>
+              <span class="wtag">Dashboard</span>
+              <span class="wtag">XAMPP</span>
+            </div>
+          </div>
+          <div class="wcard-arrow">→</div>
+        </div>
+
+        <!-- 4 — Gestion Dépôt Magazine -->
+        <div class="wcard reveal" data-cat="logiciel">
+          <div class="wcard-thumb">
+            <img src="images/gestiondepotmagazin.png" alt="Gestion de Stock" loading="lazy" />
+            <div class="wcard-thumb-overlay"></div>
+            <span class="wbadge badge-logiciel">Logiciel</span>
+          </div>
+          <div class="wcard-body">
+            <div class="wcard-cat">Logiciel · Commerce</div>
+            <h3 class="wcard-title">SARL Cascadeur — Gestion de Stock</h3>
+            <p class="wcard-desc">
+              Logiciel de gestion de dépôt et stock : tableau de bord analytique, entrées/sorties, catalogue articles, alertes rupture et historique complet des mouvements.
+            </p>
+            <div class="wcard-tags">
+              <span class="wtag">Stock</span>
+              <span class="wtag">Inventaire</span>
+              <span class="wtag">Dashboard</span>
+              <span class="wtag">Dark UI</span>
+            </div>
+          </div>
+          <div class="wcard-arrow">→</div>
+        </div>
+
+        <!-- 5 — MotiraStore -->
+        <div class="wcard reveal" data-cat="app">
+          <div class="wcard-thumb">
+            <img src="images/platformevoiture.png" alt="MotiraStore" loading="lazy" />
+            <div class="wcard-thumb-overlay"></div>
+            <span class="wbadge badge-encours">En lancement</span>
+          </div>
+          <div class="wcard-body">
+            <div class="wcard-cat">Application · Marketplace</div>
+            <h3 class="wcard-title">MotiraStore</h3>
+            <p class="wcard-desc">
+              Plateforme de vente de véhicules à Madagascar : annonces (Porsche, Hilux, Duster…), gestion admin complète, messagerie, statuts et interface moderne.
+            </p>
+            <div class="wcard-tags">
+              <span class="wtag">Web App</span>
+              <span class="wtag">Marketplace Auto</span>
+              <span class="wtag">Admin Panel</span>
+              <span class="wtag">Madagascar</span>
+            </div>
+          </div>
+          <div class="wcard-arrow">→</div>
+        </div>
+
+        <!-- 6 — Motira Covoiturage -->
+        <div class="wcard reveal" data-cat="app">
+          <div class="wcard-thumb">
+            <img src="images/covoiturage.png" alt="Motira Covoiturage" loading="lazy" />
+            <div class="wcard-thumb-overlay"></div>
+            <span class="wbadge badge-encours">En lancement</span>
+          </div>
+          <div class="wcard-body">
+            <div class="wcard-cat">Application · Mobilité</div>
+            <h3 class="wcard-title">Motira — Covoiturage</h3>
+            <p class="wcard-desc">
+              Alternative malgache à BlaBlaCar : réservations de trajets longue distance, mise en relation conducteurs/passagers, paiements intégrés en Ariary et avis.
+            </p>
+            <div class="wcard-tags">
+              <span class="wtag">Mobile App</span>
+              <span class="wtag">Covoiturage</span>
+              <span class="wtag">Madagascar</span>
+              <span class="wtag">Géolocalisation</span>
+            </div>
+          </div>
+          <div class="wcard-arrow">→</div>
+        </div>
+
+      </div>
+
+      <!-- ── DESIGN SECTION ─────────────────────────── -->
+      <div class="design-sep reveal">
+        <div class="design-sep-line"></div>
+        <div class="design-sep-label">
+          <span>🎨</span>
+          Graphic Design · Fiverr &amp; Local
+        </div>
+        <div class="design-sep-line"></div>
+      </div>
+
+      <div class="design-intro reveal">
+        <p>Créations visuelles pour clients locaux et internationaux — affiches publicitaires, thumbnails YouTube, social media ads et identités visuelles.</p>
+      </div>
+
+      <div class="design-grid">
+
+        <!-- Nike Air Jordan 1 -->
+        <div class="dcard reveal" data-cat="design">
+          <div class="dcard-img">
+            <img src="images/design-nike.jpg" alt="Nike Air Jordan 1" loading="lazy" />
+            <div class="dcard-overlay">
+              <span class="dcard-zoom">↗</span>
+            </div>
+          </div>
+          <div class="dcard-info">
+            <div class="dcard-type">Social Media Ad</div>
+            <div class="dcard-title">Nike Air Jordan 1</div>
+            <div class="dcard-sub">Publicité produit · Design @Motirawo</div>
+          </div>
+        </div>
+
+        <!-- Nuun Hydration -->
+        <div class="dcard reveal reveal-delay-1" data-cat="design">
+          <div class="dcard-img">
+            <img src="images/design-nuun.jpg" alt="Nuun Hydration" loading="lazy" />
+            <div class="dcard-overlay">
+              <span class="dcard-zoom">↗</span>
+            </div>
+          </div>
+          <div class="dcard-info">
+            <div class="dcard-type">Product Ad</div>
+            <div class="dcard-title">Nuun Sport Hydration</div>
+            <div class="dcard-sub">Campagne produit · Design @Motirawo</div>
+          </div>
+        </div>
+
+        <!-- TOP G Thumbnail -->
+        <div class="dcard reveal reveal-delay-2" data-cat="design">
+          <div class="dcard-img">
+            <img src="images/design-topg.jpg" alt="TOP G Thumbnail" loading="lazy" />
+            <div class="dcard-overlay">
+              <span class="dcard-zoom">↗</span>
+            </div>
+          </div>
+          <div class="dcard-info">
+            <div class="dcard-type">YouTube Thumbnail</div>
+            <div class="dcard-title">TOP G — Billionaire Live</div>
+            <div class="dcard-sub">Miniature YouTube · Typography design</div>
+          </div>
+        </div>
+
+        <!-- Intelligent Sunglasses -->
+        <div class="dcard reveal" data-cat="design">
+          <div class="dcard-img">
+            <img src="images/design-sunglasses.jpg" alt="Intelligent Sunglasses Ad" loading="lazy" />
+            <div class="dcard-overlay">
+              <span class="dcard-zoom">↗</span>
+            </div>
+          </div>
+          <div class="dcard-info">
+            <div class="dcard-type">Product Ad · E-commerce</div>
+            <div class="dcard-title">Intelligent Sunglasses</div>
+            <div class="dcard-sub">Publicité e-commerce · Fiverr</div>
+          </div>
+        </div>
+
+        <!-- Boulangerie Amicale v1 -->
+        <div class="dcard reveal reveal-delay-1" data-cat="design">
+          <div class="dcard-img">
+            <img src="images/design-boulangerie1.jpg" alt="Boulangerie Amicale" loading="lazy" />
+            <div class="dcard-overlay">
+              <span class="dcard-zoom">↗</span>
+            </div>
+          </div>
+          <div class="dcard-info">
+            <div class="dcard-type">Affiche · Local</div>
+            <div class="dcard-title">Boulangerie Amicale — v1</div>
+            <div class="dcard-sub">Affiche publicitaire · Client local Madagascar</div>
+          </div>
+        </div>
+
+        <!-- Boulangerie Amicale v2 -->
+        <div class="dcard reveal reveal-delay-2" data-cat="design">
+          <div class="dcard-img">
+            <img src="images/design-boulangerie2.jpg" alt="Boulangerie Amicale v2" loading="lazy" />
+            <div class="dcard-overlay">
+              <span class="dcard-zoom">↗</span>
+            </div>
+          </div>
+          <div class="dcard-info">
+            <div class="dcard-type">Affiche · Local</div>
+            <div class="dcard-title">Boulangerie Amicale — v2</div>
+            <div class="dcard-sub">Déclinaison identité · Cascadeur</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lightbox overlay -->
+      <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-close">✕</div>
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       EXPÉRIENCE
+  ═══════════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="exp-grid">
+
+        <div class="exp-left">
+          <span class="label reveal">Parcours</span>
+          <h2 class="section-title reveal">Expérience &amp;<br/>Formation</h2>
+          <p class="reveal">
+            De la formation académique en informatique au déploiement de plateformes réelles — un parcours orienté pratique et impact.
+          </p>
+
+          <!-- Education -->
+          <div class="edu-grid" style="margin-top:2.5rem;">
+            <div class="edu-card reveal">
+              <div class="edu-icon">🎓</div>
+              <div class="edu-deg">Informatique</div>
+              <div class="edu-school">IT University</div>
+              <div class="edu-year">2021 — 2024</div>
+            </div>
+            <div class="edu-card reveal reveal-delay-1">
+              <div class="edu-icon">🌐</div>
+              <div class="edu-deg">Full Stack Dev</div>
+              <div class="edu-school">Autodidacte + Projets</div>
+              <div class="edu-year">2022 — présent</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <div class="titem reveal">
+            <div class="tdot"></div>
+            <div class="tdate">Début 2026 — Présent</div>
+            <div class="trole">Gérant & Développeur</div>
+            <div class="tcompany">Vahinn Resort · Madagascar</div>
+            <div class="tdesc">
+              Gestion opérationnelle du Vahinn Resort (Hôtel · Resort · Spa) en parallèle du développement et déploiement des outils digitaux internes : POS, gestion des réservations, site officiel.
+            </div>
+          </div>
+
+          <div class="titem reveal">
+            <div class="tdot"></div>
+            <div class="tdate">2025</div>
+            <div class="trole">Freelance Designer UI/UX</div>
+            <div class="tcompany">Fiverr · Remote</div>
+            <div class="tdesc">
+              Conception d'interfaces et d'identités visuelles pour des clients internationaux. Maquettes Figma, design systems et livraisons pixel-perfect en HTML/CSS.
+            </div>
+          </div>
+
+          <div class="titem reveal">
+            <div class="tdot"></div>
+            <div class="tdate">2024 — 2025</div>
+            <div class="trole">Fondateur — MotiraStore &amp; Motira</div>
+            <div class="tcompany">Projets personnels · En cours de lancement</div>
+            <div class="tdesc">
+              Conception et développement de deux plateformes innovantes pour le marché malgache : une marketplace automobile et une application de covoiturage longue distance.
+            </div>
+          </div>
+
+          <div class="titem reveal">
+            <div class="tdot"></div>
+            <div class="tdate">2022 — 2024</div>
+            <div class="trole">Développeur Logiciels Hôteliers</div>
+            <div class="tcompany">Projets clients · Hôtellerie</div>
+            <div class="tdesc">
+              Développement de trois solutions logicielles sur mesure pour Vahinn Resort : système de point de vente, logiciel de gestion des réservations, et logiciel de gestion de stock pour SARL Cascadeur.
+            </div>
+          </div>
+
+          <div class="titem reveal">
+            <div class="tdot"></div>
+            <div class="tdate">2021 — 2024</div>
+            <div class="trole">Étudiant en Informatique</div>
+            <div class="tcompany">IT University · Madagascar</div>
+            <div class="tdesc">
+              Formation en développement logiciel, bases de données, algorithmique et conception de systèmes. Premiers projets réels dès la deuxième année.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+
+        <div class="contact-left">
+          <span class="label reveal">Contact</span>
+          <h2 class="section-title reveal">Travaillons<br/>ensemble</h2>
+          <p class="reveal">
+            Vous avez un projet, une idée ou besoin d'un développeur Full Stack pour votre équipe ? Écrivez-moi, je réponds sous 24h.
+          </p>
+
+          <div class="avail reveal">
+            <span class="avail-dot"></span>
+            Disponible pour nouveaux projets
+          </div>
+
+          <div class="clinks">
+            <a href="tel:+261345930932" class="clink reveal">
+              <div class="clink-icon">📞</div>
+              <div>
+                <div class="clink-label">Téléphone</div>
+                <div class="clink-val">+261 34 59 309 32</div>
+              </div>
+            </a>
+            <a href="https://wa.me/261345930932" target="_blank" rel="noopener" class="clink reveal reveal-delay-1">
+              <div class="clink-icon">💬</div>
+              <div>
+                <div class="clink-label">WhatsApp</div>
+                <div class="clink-val">+261 34 59 309 32</div>
+              </div>
+            </a>
+            <a href="mailto:venomworlando@gmail.com" class="clink reveal reveal-delay-2">
+              <div class="clink-icon">✉️</div>
+              <div>
+                <div class="clink-label">Email</div>
+                <div class="clink-val">venomworlando@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/Worlando26/Motira" target="_blank" rel="noopener" class="clink reveal reveal-delay-3">
+              <div class="clink-icon">🐙</div>
+              <div>
+                <div class="clink-label">GitHub</div>
+                <div class="clink-val">github.com/Worlando26</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal">
+          <div class="cform">
+            <div class="frow">
+              <div class="fg">
+                <label for="fname">Prénom *</label>
+                <input type="text" id="fname" placeholder="Jean" />
+              </div>
+              <div class="fg">
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" placeholder="Dupont" />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="email">Email *</label>
+              <input type="email" id="email" placeholder="jean@exemple.com" />
+            </div>
+            <div class="fg">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" placeholder="Développement d'une application..." />
+            </div>
+            <div class="fg">
+              <label for="message">Message *</label>
+              <textarea id="message" placeholder="Décrivez votre projet ou votre demande…"></textarea>
+            </div>
+            <button class="btn-submit" onclick="sendMessage()">
+              Envoyer le message <span>→</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer>
+    <p>© 2026 <strong>Worlando Has</strong> — Tous droits réservés</p>
+    <ul class="foot-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#works">Projets</a></li>
+      <li><a href="https://github.com/Worlando26" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
